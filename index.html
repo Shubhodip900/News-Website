@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>News app</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container container flex">
+            <a href="#" onclick="reload()" class="logo">Today News</a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="nav-items" id="sports" onclick="onNave('sports')">Sports</li>
+                    <li class="nav-items" id="finance" onclick="onNave('finance')">Finance</li>
+                    <li class="nav-items" id="politics" onclick="onNave('politics')">politics</li>
+                    <li class="nav-items" id="technology" onclick="onNave('technology')">Technology</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input type="text" class="news-input" id="news-input" placeholder=" e.g. Science">
+                <button class="search-button" id="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="card-container container flex" id="card-container">
+
+        </div>
+    </main>
+    <template id="news-card-template">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 class="news-title" id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                <p class="news-text" id="news-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil incidunt ab cumque molestiae laborum. Incidunt neque vitae laudantium ullam odit.</p>
+
+            </div>
+        </div>
+    </template>
+    <script src="main.js"></script>
+</body>
+</html>
